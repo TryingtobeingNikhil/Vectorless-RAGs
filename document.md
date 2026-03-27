@@ -1,0 +1,17 @@
+Python is a high-level, general-purpose programming language created by Guido van Rossum and first released in 1991. It emphasizes code readability and uses indentation to define code blocks. It supports procedural, object-oriented, and functional programming.
+
+Variables in Python do not need explicit type declarations. The interpreter infers the type at runtime. Common built-in types include int, float, str, list, tuple, dict, and set. Python uses dynamic typing, meaning the same variable can hold different types at different times.
+
+Python functions are defined using the def keyword. Functions are first-class objects and can be passed as arguments, returned from other functions, and assigned to variables. Python also supports lambda functions for short anonymous functions. Decorators let you wrap a function to add behavior without modifying its source code.
+
+Python supports object-oriented programming through classes. A class is defined using the class keyword. Classes support inheritance, allowing a child class to inherit attributes and methods from a parent. Python also supports multiple inheritance. The __init__ method is the constructor called when a new instance is created.
+
+Error handling in Python uses try and except blocks. Python has a hierarchy of built-in exceptions. You can also create custom exceptions by subclassing the Exception class. The finally block runs regardless of whether an exception was raised and is used for cleanup like closing files or database connections.
+
+Python package management is handled by pip. Packages are installed from the Python Package Index called PyPI. Virtual environments created with venv allow each project to have its own isolated set of installed packages. The requirements.txt file lists all packages a project depends on and their versions.
+
+The Global Interpreter Lock, called the GIL, is a mutex in CPython that prevents multiple native threads from executing Python bytecode at the same time. This means that even on multi-core machines, only one thread runs Python code at any given moment. CPU-bound tasks do not benefit from threading because of the GIL. To achieve true parallelism for CPU-bound work, use the multiprocessing module, which spawns separate processes each with their own GIL. For I/O-bound tasks, threading works well because the GIL is released during I/O operations, allowing other threads to run while one waits for a network response or disk read. The asyncio library provides a different approach using an event loop and coroutines defined with async def and awaited with await. Asyncio is single-threaded but allows concurrent I/O by switching between coroutines at await points. This makes it efficient for handling many simultaneous network connections without the overhead of multiple threads or processes.
+
+Python list comprehensions provide a concise way to build lists from iterables. The syntax is [expression for item in iterable if condition]. Generator expressions use the same syntax with parentheses and produce values lazily one at a time, which is more memory efficient for large datasets. The itertools module provides additional tools for working with iterators.
+
+The typing module lets developers add type hints to function signatures and variables. Type hints are not enforced at runtime but can be checked by static analysis tools like mypy. Common type hints include List, Dict, Optional, Union, and Tuple. Python 3.10 introduced the pipe operator as a shorthand for Union types.
