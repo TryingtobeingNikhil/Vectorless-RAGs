@@ -1,0 +1,43 @@
+{
+  "title": "root",
+  "content": "",
+  "summary": "Here is a 2-3 sentence summary of the text:\n\nThe Apollo 11 mission successfully landed humans on the Moon on July 20, 1969, with Commander Neil Armstrong and lunar module pilot Buzz Aldrin manually landing the Eagle with only 25 seconds of fuel left. The mission's objectives included collecting lunar material, deploying scientific instruments, planting a US flag, and spending time outside the spacecraft. After a 21 hour and 36 minute stay on the Moon, the crew returned to Earth, splashing down safely in the Pacific Ocean on July 24, 1969.",
+  "depth": 0,
+  "children": [
+    {
+      "title": "Apollo 11 Mission",
+      "content": "The Apollo 11 mission was the spaceflight that first landed humans on the Moon. Commander Neil Armstrong and lunar module pilot Buzz Aldrin formed the American crew that landed the Apollo Lunar Module Eagle on July 20, 1969.",
+      "summary": "The Apollo 11 mission was the first to successfully land humans on the Moon. On July 20, 1969, Commander Neil Armstrong and lunar module pilot Buzz Aldrin landed the Apollo Lunar Module Eagle with no crew fatalities reported.",
+      "depth": 1,
+      "children": []
+    },
+    {
+      "title": "Saturn V Rocket",
+      "content": "The Saturn V was an American human-rated super heavy-lift launch vehicle used by NASA between 1967 and 1973. It was a three-stage liquid-fueled super heavy-lift launch vehicle developed to support the Apollo program. The Saturn V remains the tallest, heaviest, and most powerful rocket ever brought to operational status. It generated 7.5 million pounds of thrust at liftoff.",
+      "summary": "The Saturn V was an American human-rated rocket used by NASA between 1967 and 1973 for the Apollo program. It was a three-stage liquid-fueled vehicle that remains the tallest, heaviest, and most powerful rocket ever brought to operational status. At liftoff, it generated 7.5 million pounds of thrust.",
+      "depth": 1,
+      "children": []
+    },
+    {
+      "title": "The Lunar Descent",
+      "content": "The descent to the lunar surface was perilous. As Eagle descended, the guidance computer triggered several program alarms (1202 and 1201), which indicated that the computer was overloaded with radar data. However, mission control determined it was safe to continue. Armstrong had to take semi-manual control as the automated targeting system was guiding them into a boulder-filled crater, landing with only 25 seconds of fuel remaining.",
+      "summary": "Here is a summary of the text in 2-3 sentences:\n\nDuring the descent to the lunar surface, the guidance computer triggered program alarms due to being overloaded with radar data. Despite this, mission control gave permission to continue descension. The Eagle landed manually by Armstrong with only 25 seconds of fuel left, avoiding a crater filled with boulders.",
+      "depth": 1,
+      "children": []
+    },
+    {
+      "title": "The Moonwalk",
+      "content": "After landing, Armstrong descended the ladder and proclaimed: \"That's one small step for man, one giant leap for mankind.\" Aldrin joined him shortly after, describing the view as \"magnificent desolation.\" They collected 47.5 pounds (21.5 kg) of lunar surface material, deployed scientific instruments including a seismic experiment package, and planted the US flag. They spent about two and a quarter hours outside the spacecraft.",
+      "summary": "Here is a factual summary:\n\nArmstrong descended the ladder to the moon's surface and declared \"That's one small step for man, one giant leap for mankind.\" He was joined by Aldrin shortly after. During their time on the surface, they collected 47.5 pounds of lunar material, deployed scientific instruments, planted a US flag, and spent about two and a quarter hours outside the spacecraft.",
+      "depth": 1,
+      "children": []
+    },
+    {
+      "title": "The Return Journey",
+      "content": "After spending 21 hours and 36 minutes on the lunar surface, Eagle's ascent stage launched back into lunar orbit to rendezvous with the Command Module Columbia, piloted by Michael Collins. Collins had remained alone in orbit, orbiting the moon 30 times. The crew returned to Earth and splashed down safely in the Pacific Ocean on July 24, 1969, fulfilling President Kennedy's goal of reaching the moon before the end of the decade.",
+      "summary": "Here is a summary of the section:\n\nEagle's ascent stage launched from the lunar surface after a 21 hour and 36 minute stay and rendezvoused with the Command Module Columbia in orbit. The crew then returned to Earth, splashing down safely in the Pacific Ocean on July 24, 1969.",
+      "depth": 1,
+      "children": []
+    }
+  ]
+}

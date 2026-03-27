@@ -6,7 +6,7 @@ def _summarize(text: str, section_name: str = "") -> str:
     hint = f"Section: {section_name}\n\n" if section_name else ""
     prompt = f"{hint}Summarize the following in 2-3 sentences. Be specific and factual.\n\n{text[:3000]}"
     response = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model="llama3",
         messages=[
             {
                 "role": "system",

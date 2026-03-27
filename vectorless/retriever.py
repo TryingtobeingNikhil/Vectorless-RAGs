@@ -21,7 +21,7 @@ Children of this section:
 Which child section most likely contains the answer? Reply with only the number."""
 
     response = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model="llama3",
         messages=[
             {
                 "role": "system",

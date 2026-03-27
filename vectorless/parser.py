@@ -15,7 +15,7 @@ Text:
 {text[:8000]}"""
 
     response = client.chat.completions.create(
-        model="gpt-4o",
+        model="llama3",
         messages=[
             {
                 "role": "system",
