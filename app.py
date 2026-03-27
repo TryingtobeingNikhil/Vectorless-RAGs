@@ -33,7 +33,6 @@ def get_document_tree() -> PageNode:
             st.error(f"Cannot find default document at {DOC_PATH}")
             st.stop()
         
-        # We need a spinner to indicate build is happening
         with st.spinner("Building index for the first time... This makes LLM calls and might take a minute."):
             with open(DOC_PATH, "r", encoding="utf-8") as f:
                 text = f.read()
@@ -212,9 +211,6 @@ def main():
 
     run = st.button("Run", type="primary", disabled=not query.strip())
 
-    # Only load backend tree after user hits enter to avoid heavy startups
-    # unless we want the tree to show immediately. 
-    # Let's load the tree early, so we can display it empty initially.
     try:
         document_tree = get_document_tree()
     except Exception as e:
@@ -231,7 +227,6 @@ def main():
 
     st.markdown("---")
 
-    # ── A. Navigation Trace ──────────────────────────────────────────────────
     st.subheader("Navigation Trace")
     trace_container = st.empty()
     rendered_lines: list[str] = []
@@ -239,11 +234,9 @@ def main():
     leaf: str | None = None
     leaf_content: str | None = None
 
-    # ── B. Tree View (side-by-side with trace) ───────────────────────────────
     st.subheader("Document Tree")
     tree_container = st.empty()
 
-    # Render initial (empty path) tree immediately
     tree_container.code(
         "root\n" + render_tree(document_tree, []),
         language=None,
@@ -272,14 +265,12 @@ def main():
 
         time.sleep(0.7)
 
-    # ── C. Retrieved Context ─────────────────────────────────────────────────
     st.subheader("Retrieved Context")
     if leaf_content:
         st.info(leaf_content)
     else:
         st.info("No context retrieved.")
 
-    # ── D. Final Answer ───────────────────────────────────────────────────────
     st.subheader("Generated Answer")
     if leaf_content:
         with st.spinner("Generating answer..."):
