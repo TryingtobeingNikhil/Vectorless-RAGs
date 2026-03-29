@@ -118,7 +118,7 @@ def navigate(query: str, root: PageNode) -> list[dict]:
 
 
 # Rendering helpers
-# ---------------------------------------------------------------------------
+
 
 def render_tree(node: PageNode, path: list[str], depth: int = 0) -> str:
     """
