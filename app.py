@@ -23,7 +23,7 @@ DOC_PATH = "document.md"
 
 
 # Document tree and index logic
-# ---------------------------------------------------------------------------
+
 
 @st.cache_resource
 def get_document_tree() -> PageNode:
