@@ -42,7 +42,6 @@ def get_document_tree() -> PageNode:
         return tree
     return load(INDEX_PATH)
 
-# ---------------------------------------------------------------------------
 # Navigation logic
 
 
