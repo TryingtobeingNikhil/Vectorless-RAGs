@@ -1,7 +1,7 @@
 """
 Vectorless RAG Demo
 -------------------
-A Streamlit app that demonstrates document navigation as retrieval —
+A Streamlit app that demonstrates document navigation as retrieval 
 traversing a structured document tree step by step instead of searching embeddings.
 """
 
