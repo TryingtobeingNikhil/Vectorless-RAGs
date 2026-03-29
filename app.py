@@ -44,7 +44,7 @@ def get_document_tree() -> PageNode:
 
 # ---------------------------------------------------------------------------
 # Navigation logic
-# ---------------------------------------------------------------------------
+
 
 def retrieve_leaf_content(node: PageNode) -> str:
     content = node.content
