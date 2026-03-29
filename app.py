@@ -153,7 +153,7 @@ def render_step_message(step: dict) -> str:
 
 
 # Page config and styles
-# ---------------------------------------------------------------------------
+
 
 def configure_page():
     st.set_page_config(
