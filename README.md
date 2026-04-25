@@ -1,6 +1,6 @@
 # Vectorless RAGs
 
-Vectorless, reasoning-based RAG. No embeddings, no vector database.
+Vectorless, reasoning-based RAG. No embeddings, no vector database......
 
 The system parses a document into a section tree, summarizes each node, and uses an LLM to navigate the tree at query time to find the most relevant content.
 
